@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+:root{
+    --white-color: #fff;
+    --dark-text: #5E1035;
+}
 
 *{
     margin: 0;
@@ -11,9 +15,74 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    color: var(--text-color);
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #efffef;
+    color: var(--dark-text);
+
+}
+main{
+ width: 30rem;
+ text-align: center;
+ position: absolute;
+
+
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 15rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    color: var(--dark-text);
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    background-color: var(--dark-text);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    transition: all 0.2s ease;
+    margin: 1rem 0;
+
+}
+
+button:hover{
+    transform: translateY(5px) ;
+
+
+}
+
+.tooltip{
+    position: absolute;
+    bottom:px;
+    right: -100px;
+    display: none;
+}
+
+div:hover .tooltip{
+    display: block;
+}
+
+.output {
+    width: 100%;
+    height: 15rem;
+    border: 2px solid var(--dark-text);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
